@@ -45,6 +45,7 @@ WITH cteValue AS (
                                                 'Exception Tracker - Line Pressure - Oil Differed - Day 6',
                                                 'Exception Tracker - Line Pressure - Oil Differed - Day 7',
                                                 'Exception Tracker - Line Pressure - Oil Differed',
+                                                
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1',
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2',
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3',
@@ -53,6 +54,7 @@ WITH cteValue AS (
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6',
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7',
                                                 'Exception Tracker - Line Pressure - Oil Revenue Differed',
+                                                
                                                 'Exception Tracker - Gas Sales Pressure Indicator',
                                                 'Exception Tracker - Line Pressure Indicator',
                                                 'HF Production Tracker - Oil Target Highest'
@@ -61,11 +63,13 @@ WITH cteValue AS (
 
 -- Format and Pivot the internal table data for use by the Line Pressure dashboard
 SELECT ObjectInstanceName,
+
        CAST([HF Plunger Output - Tubing Pressure - Average Bin Number] AS FLOAT) AS TubingPressABN,
        CAST([HF Plunger Output - Line Pressure - Average Bin Number] AS FLOAT) AS LinePressABN,
        CAST([HF Plunger Output - Gas Sales Pressure - Average Bin Number] AS FLOAT) AS GasSalesPressABN,
        CAST([HF Plunger Output - Average XMV to Sales Gas Pressure Delta - 7 Day] AS FLOAT) AS AvgXmvToSalesGasPressDelta7Day,
        CAST([HF Plunger Output - Line Pressure - Gas Sales - Plot Flag] AS FLOAT) AS LinePressGasSalesPlotFlag,
+
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 1] AS FLOAT) AS LinePressOilDiffDay1,
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 2] AS FLOAT) AS LinePressOilDiffDay2,
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 3] AS FLOAT) AS LinePressOilDiffDay3,
@@ -73,15 +77,17 @@ SELECT ObjectInstanceName,
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 5] AS FLOAT) AS LinePressOilDiffDay5,
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 6] AS FLOAT) AS LinePressOilDiffDay6,
        CAST([Exception Tracker - Line Pressure - Oil Differed - Day 7] AS FLOAT) AS LinePressOilDiffDay7,
-       CAST([Exception Tracker - Line Pressure - Oil Differed] AS FLOAT) AS OilDiffered,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1] AS FLOAT) AS LinePressRevDiffDay1,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2] AS FLOAT) AS LinePressRevDiffDay2,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3] AS FLOAT) AS LinePressRevDiffDay3,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 4] AS FLOAT) AS LinePressRevDiffDay4,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 5] AS FLOAT) AS LinePressRevDiffDay5,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6] AS FLOAT) AS LinePressRevDiffDay6,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7] AS FLOAT) AS LinePressRevDiffDay7,
-       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed] AS FLOAT) AS RevDiffered,
+       CAST([Exception Tracker - Line Pressure - Oil Differed] AS FLOAT) AS LinePressOilDiff,
+
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1] AS FLOAT) AS LinePressOilRevDiffDay1,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2] AS FLOAT) AS LinePressOilRevDiffDay2,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3] AS FLOAT) AS LinePressOilRevDiffDay3,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 4] AS FLOAT) AS LinePressOilRevDiffDay4,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 5] AS FLOAT) AS LinePressOilRevDiffDay5,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6] AS FLOAT) AS LinePressOilRevDiffDay6,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7] AS FLOAT) AS LinePressOilRevDiffDay7,
+       CAST([Exception Tracker - Line Pressure - Oil Revenue Differed] AS FLOAT) AS LinePressOilRevDiff,
+
        CAST([Exception Tracker - Gas Sales Pressure Indicator] AS FLOAT) AS GasSalesPressInd,
        CAST([Exception Tracker - Line Pressure Indicator] AS FLOAT) AS LinePressInd,
        CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHighest
@@ -95,6 +101,7 @@ PIVOT (
          [HF Plunger Output - Gas Sales Pressure - Average Bin Number],
          [HF Plunger Output - Average XMV to Sales Gas Pressure Delta - 7 Day],
          [HF Plunger Output - Line Pressure - Gas Sales - Plot Flag],
+
          [Exception Tracker - Line Pressure - Oil Differed - Day 1],
          [Exception Tracker - Line Pressure - Oil Differed - Day 2],
          [Exception Tracker - Line Pressure - Oil Differed - Day 3],
@@ -103,6 +110,7 @@ PIVOT (
          [Exception Tracker - Line Pressure - Oil Differed - Day 6],
          [Exception Tracker - Line Pressure - Oil Differed - Day 7],
          [Exception Tracker - Line Pressure - Oil Differed],
+         
          [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1],
          [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2],
          [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3],
@@ -111,6 +119,7 @@ PIVOT (
          [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6],
          [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7],
          [Exception Tracker - Line Pressure - Oil Revenue Differed],
+
          [Exception Tracker - Gas Sales Pressure Indicator],
          [Exception Tracker - Line Pressure Indicator],
          [HF Production Tracker - Oil Target Highest]
