@@ -1,0 +1,173 @@
+/*
+*********************************************************************************
+*  Source Name:  
+*        LinePressureSurveillance,sql
+*  
+*  Purpose:      
+*        SQL Query used to retrieve an format data for the Line Pressure
+*        Surveillance IOC dashboard.
+*        
+*  Author:
+*        Robert Palumbo
+*        
+*  Date: 
+*        08/07/2018
+*        
+*  Property of Anadarko Petroleum Corporation (APC)
+* 
+**********************************************************************************
+*/
+
+USE IVMConfig
+GO
+
+-- Create temp table containing the BIN name text values
+IF OBJECT_ID('tempdb..#BinLabels') IS NULL
+    SELECT  
+        IVMConfig.ivm.Condition.ConditionId, 
+        IVMConfig.ivm.Condition.ConditionName, 
+        IVMConfig.ivm.Condition.[Text]  
+    INTO tempdb..#BinLabels
+    FROM 
+        IVMConfig.ivm.ConditionMapping 
+        INNER JOIN
+            IVMConfig.ivm.Condition ON 
+                IVMConfig.ivm.Condition.ConditionId = 
+                    IVMConfig.ivm.ConditionMapping.ConditionMappingId
+    WHERE 
+        IVMConfig.ivm.Condition.ConditionName LIKE 'Bin %'
+    ORDER BY 
+        IVMConfig.ivm.Condition.ConditionId
+
+SELECT * FROM tempdb..#BinLabels;
+
+--USE IAMExternal
+--GO
+
+-- Perform the query to retrieve the requisite Line Pressure data
+WITH cteValue AS ( 
+    SELECT v.ObjectInstanceName, v.ObjectTypePropertyName, 
+        CASE IsString 
+            WHEN 0 THEN COALESCE(v.CurrentValue, '0') 
+            ELSE COALESCE(v.CurrentValue, '') 
+        END AS CurrentValue
+    FROM IVMPetexDP.ext.vw_CurrentValues v
+    WHERE v.ObjectTypeId = 1000000
+            AND ((v.DataSourceName IN ('Plunger Surveillance') AND 
+                  v.ObjectTypePropertyName IN (
+                                                'HF Plunger Output - Tubing Pressure - Average Bin Number',
+                                                'HF Plunger Output - Line Pressure - Average Bin Number',
+                                                'HF Plunger Output - Gas Sales Pressure - Average Bin Number',
+                                                'HF Plunger Output - Average XMV to Sales Gas Pressure Delta - 7 Day',
+                                                'HF Plunger Output - Line Pressure - Gas Sales - Plot Flag'
+                                               )) OR 
+                 (v.DataSourceName IN ('Production Surveillance') AND
+                  v.ObjectTypePropertyName IN (
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 1',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 2',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 3',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 4',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 5',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 6',
+                                                'Exception Tracker - Line Pressure - Oil Differed - Day 7',
+                                                'Exception Tracker - Line Pressure - Oil Differed',
+                                                
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 4',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 5',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7',
+                                                'Exception Tracker - Line Pressure - Oil Revenue Differed',
+                                                
+                                                'Exception Tracker - Gas Sales Pressure Indicator',
+                                                'Exception Tracker - Line Pressure Indicator',
+                                                'HF Production Tracker - Oil Target Highest'
+                                               )))
+)
+
+--SELECT * FROM cteValue
+
+-- Format and Pivot the internal table data for use by the Line Pressure dashboard
+SELECT 
+    ObjectInstanceName,
+
+    (SELECT * FROM 
+    (
+        (SELECT 
+            Text
+        FROM tempdb..#BinLabels
+        WHERE ROW_NUMBER( ) OVER( ORDER BY ConditionName ) = 3) AS RowNum
+
+    )) AS RLP,
+
+    (SELECT * FROM 
+    (
+        SELECT 
+            ROW_NUMBER( ) OVER( ORDER BY ConditionName ) AS RowNum
+        FROM tempdb..#BinLabels
+    ) t2
+    WHERE RowNum = 3) AS XYZ,
+    	 --CAST([HF Plunger Output - Tubing Pressure - Average Bin Number] AS INT)) AS TubingPressBin,
+         
+    CAST([HF Plunger Output - Line Pressure - Average Bin Number] AS FLOAT) AS LinePressBin,
+    CAST([HF Plunger Output - Gas Sales Pressure - Average Bin Number] AS FLOAT) AS GasSalesPressBin,
+    CAST([HF Plunger Output - Average XMV to Sales Gas Pressure Delta - 7 Day] AS FLOAT) AS AvgXmvToSalesGasPressDelta7Day,
+    CAST([HF Plunger Output - Line Pressure - Gas Sales - Plot Flag] AS FLOAT) AS LinePressGasSalesPlotFlag,
+
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 1] AS FLOAT) AS LinePressOilDiffDay1,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 2] AS FLOAT) AS LinePressOilDiffDay2,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 3] AS FLOAT) AS LinePressOilDiffDay3,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 4] AS FLOAT) AS LinePressOilDiffDay4,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 5] AS FLOAT) AS LinePressOilDiffDay5,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 6] AS FLOAT) AS LinePressOilDiffDay6,
+    CAST([Exception Tracker - Line Pressure - Oil Differed - Day 7] AS FLOAT) AS LinePressOilDiffDay7,
+    CAST([Exception Tracker - Line Pressure - Oil Differed] AS FLOAT) AS LinePressOilDiff,
+
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1] AS FLOAT) AS LinePressOilRevDiffDay1,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2] AS FLOAT) AS LinePressOilRevDiffDay2,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3] AS FLOAT) AS LinePressOilRevDiffDay3,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 4] AS FLOAT) AS LinePressOilRevDiffDay4,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 5] AS FLOAT) AS LinePressOilRevDiffDay5,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6] AS FLOAT) AS LinePressOilRevDiffDay6,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7] AS FLOAT) AS LinePressOilRevDiffDay7,
+    CAST([Exception Tracker - Line Pressure - Oil Revenue Differed] AS FLOAT) AS LinePressOilRevDiff,
+
+    CAST([Exception Tracker - Gas Sales Pressure Indicator] AS FLOAT) AS GasSalesPressInd,
+    CAST([Exception Tracker - Line Pressure Indicator] AS FLOAT) AS LinePressInd,
+    CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHighest
+FROM (SELECT * FROM cteValue) AS v
+PIVOT (
+    MAX(v.CurrentValue)
+    FOR v.ObjectTypePropertyName IN 
+        (
+         [HF Plunger Output - Tubing Pressure - Average Bin Number],
+         [HF Plunger Output - Line Pressure - Average Bin Number],
+         [HF Plunger Output - Gas Sales Pressure - Average Bin Number],
+         [HF Plunger Output - Average XMV to Sales Gas Pressure Delta - 7 Day],
+         [HF Plunger Output - Line Pressure - Gas Sales - Plot Flag],
+
+         [Exception Tracker - Line Pressure - Oil Differed - Day 1],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 2],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 3],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 4],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 5],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 6],
+         [Exception Tracker - Line Pressure - Oil Differed - Day 7],
+         [Exception Tracker - Line Pressure - Oil Differed],
+         
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 1],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 2],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 3],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 4],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 5],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 6],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed - Day 7],
+         [Exception Tracker - Line Pressure - Oil Revenue Differed],
+
+         [Exception Tracker - Gas Sales Pressure Indicator],
+         [Exception Tracker - Line Pressure Indicator],
+         [HF Production Tracker - Oil Target Highest]
+        )
+) AS pvt

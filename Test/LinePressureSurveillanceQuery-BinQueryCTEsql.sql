@@ -10,13 +10,16 @@
 *  Author:
 *        Robert Palumbo
 *        
-*  Creation Date: 
+*  Date: 
 *        08/07/2018
 *        
 *  Property of Anadarko Petroleum Corporation (APC)
 * 
 **********************************************************************************
 */
+
+USE IVMConfig;
+GO
 
 -- Create temp table containing the BIN name text values
 WITH cteBinLabels AS (
