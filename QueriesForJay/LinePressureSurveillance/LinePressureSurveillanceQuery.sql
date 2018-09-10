@@ -1,17 +1,17 @@
 /*
 *********************************************************************************
 *  Source Name:  
-*        LinePressureSurveillance,sql
+*       LinePressureSurveillance.sql
 *  
 *  Purpose:      
-*        SQL Query used to retrieve an format data for the Line Pressure
-*        Surveillance IOC dashboard.
+*       SQL Query used to retrieve and format data for the Line Pressure
+*       Surveillance IOC dashboard.
 *        
 *  Author:
-*        Robert Palumbo
+*       Robert Palumbo
 *        
 *  Creation Date: 
-*        08/07/2018
+*       08/07/2018
 *        
 *  Property of Anadarko Petroleum Corporation (APC)
 * 
@@ -38,7 +38,9 @@ WITH cteBinLabels AS (
 
 -- Perform the query to retrieve the requisite Line Pressure data
 ,cteValue AS ( 
-    SELECT v.ObjectInstanceName, v.ObjectTypePropertyName, 
+    SELECT 
+        v.ObjectInstanceName, 
+        v.ObjectTypePropertyName, 
         CASE IsString 
             WHEN 0 THEN COALESCE(v.CurrentValue, '0') 
             ELSE COALESCE(v.CurrentValue, '') 
