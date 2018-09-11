@@ -1,12 +1,12 @@
 /*
 *********************************************************************************
 * Source Name:  
-*   XmvPressureOilDeferred2018HistValuesQuery.sql
+*   XmvLinePressureFieldOilLossYrlyCum.sql
 *  
 * Purpose:      
-*   SQL Query used to retrieve and format 2018 XMV Pressure Oil Deferred 
-*   Cumulative historical values for in the range 2017-12-25 thru current 
-*   day. 
+*   SQL Query used to retrieve and format 2018 XMV Line Pressure Oil Loss 
+*   (historical values) yearly cumulative for the date range 2017-12-25 thru 
+*   current day for all fields.
 *
 * Data Source:
 *   Production Surveillance

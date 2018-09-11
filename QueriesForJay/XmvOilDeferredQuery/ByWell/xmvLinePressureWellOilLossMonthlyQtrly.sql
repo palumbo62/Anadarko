@@ -1,11 +1,11 @@
 /*
 *********************************************************************************
 * Source Name:  
-*   XmvPressureOilDeferredCurrValuesQuery.sql
+*   xmvLinePressureWellOilLossMonthlyQtrly.sql
 *  
 * Purpose:      
-*   SQL Query used to retrieve and format XMV Pressure Oil Deferred Cumulative
-*   current values for the months of Jan - Dec 2018. 
+*   SQL Query used to retrieve and format XMV Line Pressure Oil Loss  
+*   (current values) monthly and quarterly for all wells.
 *
 * Data Source:
 *   Production Surveillance
@@ -14,7 +14,7 @@
 *   Robert Palumbo
 *        
 * Creation Date: 
-*   09/10/2018
+*   09/11/2018
 *        
 *  Property of Anadarko Petroleum Corporation (APC)
 * 
@@ -32,7 +32,7 @@ WITH cteValue AS (
         END AS CurrentValue
     FROM IVMPetexDP.ext.vw_CurrentValues cv
     WHERE 
-        (cv.ObjectTypeId = 1000001) AND
+        (cv.ObjectTypeId = 1000000) AND
         (cv.DataSourceName IN ('Production Surveillance') AND
             cv.ObjectTypePropertyName IN (
                 'Summary - XMV Pressure - Oil Deferred - Cumulative - Jan',
@@ -56,7 +56,7 @@ WITH cteValue AS (
 
 -- Format and Pivot the internal table data for use by the Line Pressure dashboard
 SELECT 
-    ObjectInstanceName,
+    ObjectInstanceName as WellName,
     CAST([Summary - XMV Pressure - Oil Deferred - Cumulative - Jan] AS FLOAT) 
         AS XmvOilDeferJan,
     CAST([Summary - XMV Pressure - Oil Deferred - Cumulative - Feb] AS FLOAT) 
