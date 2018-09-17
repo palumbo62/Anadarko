@@ -1,7 +1,7 @@
 /*
 *********************************************************************************
 * Source Name:  
-*   ExceptionTrackerOilLoss.sql
+*   ExceptionTrackerOilLossByDayOfWeek.sql
 *  
 * Purpose:      
 *   SQL Query used to retrieve and format numerous exception tracker properties
