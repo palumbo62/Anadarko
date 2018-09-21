@@ -1,0 +1,7 @@
+.SQL files in this directory are used to create a report via email and Slack messages. The email recipients are stored in the file called recipients_list in this directory in a 
+comma-separated format. 
+
+The .sql files must follow a specialized format to produce a meaningful report. Every row returned must be an error or issue. The program expects a two-column format. 
+The first column represents the message to be distributed via email and the second represents the slack messages. Formatting for the slack message must be built into the sql statement.
+
+The name of the .sql file in this directory will be the title of the report message.
