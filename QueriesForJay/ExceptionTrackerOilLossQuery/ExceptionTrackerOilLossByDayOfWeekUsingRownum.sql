@@ -26,7 +26,6 @@ WITH cteValue1 AS (
     SELECT 
         ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Gas Sales Pressure') PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -50,7 +49,6 @@ WITH cteValue1 AS (
     SELECT 
         ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Line Pressure') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -74,7 +72,6 @@ WITH cteValue1 AS (
     SELECT 
         (ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) ) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Fast Trips') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -98,7 +95,6 @@ WITH cteValue1 AS (
     SELECT 
         (ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) ) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Missed Oil Target') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -122,7 +118,6 @@ WITH cteValue1 AS (
     SELECT 
         (ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) ) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Missed Trips') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -146,7 +141,6 @@ WITH cteValue1 AS (
     SELECT 
         (ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) ) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'Slow Trips') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -170,7 +164,6 @@ WITH cteValue1 AS (
     SELECT 
         (ROW_NUMBER() OVER(ORDER BY cv.ObjectTypePropertyName) ) AS DayOfWeek,
         cv.ObjectTypePropertyName, 
-        cv.LastGoodSampleTime AS SampleTime,
         (select 'No Flow') AS PropertyName,
         CASE IsString 
             WHEN 0 THEN COALESCE(cv.CurrentValue, '0') 
@@ -192,10 +185,7 @@ WITH cteValue1 AS (
 )
 
 SELECT 
-    --(ROW_NUMBER() OVER(ORDER BY cv1.PropertyName)) AS DayOfWeek, 
-    --convert(varchar, DATEADD(DAY, -1, cv1.SampleTime), 101) AS Date,
-    convert(varchar, cv1.SampleTime, 101) AS Date,
-
+    (ROW_NUMBER() OVER(ORDER BY cv1.PropertyName)) AS DayOfWeek, 
     cv1.CurrentValue AS 'Gas Sales Pressure',
     cv2.CurrentValue AS 'Line Pressure',
     cv3.CurrentValue AS 'Fast Trips',
@@ -203,6 +193,29 @@ SELECT
     cv5.CurrentValue AS 'Missed Trips',
     cv6.CurrentValue AS 'Slow Trips',
     cv7.CurrentValue AS 'No Flow'
+FROM cteValue1 cv1
+    INNER JOIN cteValue2 cv2
+        ON cv1.DayOfWeek = cv2.DayOfWeek
+    INNER JOIN cteValue3 cv3
+        ON cv1.DayOfWeek = cv3.DayOfWeek
+    INNER JOIN cteValue4 cv4
+        ON cv1.DayOfWeek = cv4.DayOfWeek
+    INNER JOIN cteValue5 cv5
+        ON cv1.DayOfWeek = cv5.DayOfWeek
+    INNER JOIN cteValue6 cv6
+        ON cv1.DayOfWeek = cv6.DayOfWeek
+    INNER JOIN cteValue7 cv7
+        ON cv1.DayOfWeek = cv7.DayOfWeek
+UNION
+SELECT
+    8,
+    SUM(CAST(cv1.CurrentValue AS FLOAT)),
+    SUM(CAST(cv2.CurrentValue AS FLOAT)),
+    SUM(CAST(cv3.CurrentValue AS FLOAT)),
+    SUM(CAST(cv4.CurrentValue AS FLOAT)),
+    SUM(CAST(cv5.CurrentValue AS FLOAT)),
+    SUM(CAST(cv6.CurrentValue AS FLOAT)),
+    SUM(CAST(cv7.CurrentValue AS FLOAT))
 FROM cteValue1 cv1
     INNER JOIN cteValue2 cv2
         ON cv1.DayOfWeek = cv2.DayOfWeek
