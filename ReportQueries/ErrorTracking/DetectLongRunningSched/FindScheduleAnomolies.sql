@@ -9,11 +9,11 @@ SELECT  @DayOffset, @RunHistoryStartOffset, @StdDevFactor, @StdDevLabel;
 WITH cte1 AS (
     SELECT 
         srh.ScheduleId 
-        , srh.StartTime
-        , srh.EndTime
-        , DATEDIFF(second, [StartTime], [EndTime]) AS RunTimeSec
-        , srh.HasError
-        , rank() over 
+        ,srh.StartTime
+        ,srh.EndTime
+        ,DATEDIFF(second, [StartTime], [EndTime]) AS RunTimeSec
+        ,srh.HasError
+        ,rank() over 
             (partition by srh.ScheduleId order by srh.StartTime DESC) as RunHistory
     FROM IVMHistorical.ivm.ScheduleRunHistory srh
     WHERE 
@@ -24,11 +24,11 @@ WITH cte1 AS (
 , cte2 AS (
     SELECT 
         cv.ScheduleId AS SchedId
-        , COUNT (*) AS TotalRuns
-        , MIN(cv.RunTimeSec) AS MinRunTime
-        , MAX(cv.RunTimeSec) AS MaxRunTime
-        , AVG(cv.RunTimeSec) AS AvgRunTime
-        , STDEV(cv.RunTimeSec) AS RunTimeStdDev
+        ,COUNT (*) AS TotalRuns
+        ,MIN(cv.RunTimeSec) AS MinRunTime
+        ,MAX(cv.RunTimeSec) AS MaxRunTime
+        ,AVG(cv.RunTimeSec) AS AvgRunTime
+        ,STDEV(cv.RunTimeSec) AS RunTimeStdDev
     FROM
         cte1 cv
     GROUP BY
@@ -37,17 +37,17 @@ WITH cte1 AS (
 ) 
 , cte3 AS (
     SELECT
-        cv2.SchedId AS SchedId
-        , s.ScheduleName
-        , cv2.TotalRuns AS TotalRuns
-        , cv1.StartTime AS StartTime
-        , cv1.EndTime AS EndTime
-        , cv1.RunTimeSec AS RunTime
-        , cv2.MinRunTime AS MinRunTime
-        , cv2.MaxRunTime AS MaxRunTime
-        , cv2.AvgRunTime AS AvgRunTime
-        , cv2.RunTimeStdDev AS StdDev
-        , (cv2.AvgRunTime + (cv2.RunTimeStdDev * @StdDevFactor)) AS MaxStdDev
+        s.ScheduleId
+        ,s.ScheduleName
+        ,cv2.TotalRuns AS TotalRuns
+        ,cv1.StartTime AS StartTime
+        ,cv1.EndTime AS EndTime
+        ,cv1.RunTimeSec AS RunTime
+        ,cv2.MinRunTime AS MinRunTime
+        ,cv2.MaxRunTime AS MaxRunTime
+        ,cv2.AvgRunTime AS AvgRunTime
+        ,cv2.RunTimeStdDev AS StdDev
+        ,(cv2.AvgRunTime + (cv2.RunTimeStdDev * @StdDevFactor)) AS MaxStdDev
     FROM
         cte2 cv2 
         INNER JOIN cte1 cv1
@@ -58,7 +58,7 @@ WITH cte1 AS (
         (cv1.RunTimeSec > (cv2.AvgRunTime + (cv2.RunTimeStdDev * @StdDevFactor)))
 )
 SELECT 
-    cv.SchedId
+    cv.ScheduleId
     ,cv.ScheduleName
     ,cv.RunTime
     ,cv.AvgRunTime
@@ -68,5 +68,5 @@ SELECT
 FROM 
     cte3 cv
 ORDER BY 
-    cv.SchedId
-    , cv.MaxRunTime
+    cv.ScheduleId
+    ,cv.MaxRunTime
