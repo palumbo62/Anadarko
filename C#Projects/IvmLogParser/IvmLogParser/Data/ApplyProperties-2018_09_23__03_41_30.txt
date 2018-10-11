@@ -1,0 +1,381 @@
+9/23/2018 3:41:13.059 AM - Apply Properties started
+9/23/2018 3:41:16.897 AM - === Begin Applying Changes for instance 'Burge 1C-2HZ' ===
+9/23/2018 3:41:17.777 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:17.777 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:17.778 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:17.778 AM -       FindReplace action #1 Started
+9/23/2018 3:41:17.778 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:17.778 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP06_PT1 in Tag
+9/23/2018 3:41:17.778 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:17.778 AM -       FindReplace action #2 Started
+9/23/2018 3:41:17.778 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:17.778 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP06_TT1 in Tag
+9/23/2018 3:41:17.778 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:17.778 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:17.778 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:17.779 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:17.779 AM -       FindReplace action #1 Started
+9/23/2018 3:41:17.779 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:17.779 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP06_PT1 in Tag
+9/23/2018 3:41:17.779 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:17.779 AM -       FindReplace action #2 Started
+9/23/2018 3:41:17.779 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:17.779 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP06_TT1 in Tag
+9/23/2018 3:41:17.779 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:17.779 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:17.779 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:17.779 AM - === Begin Applying Changes for instance 'Burge 1N-2HZ' ===
+9/23/2018 3:41:18.618 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:18.618 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:18.619 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:18.619 AM -       FindReplace action #1 Started
+9/23/2018 3:41:18.619 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:18.619 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP07_PT1 in Tag
+9/23/2018 3:41:18.619 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:18.619 AM -       FindReplace action #2 Started
+9/23/2018 3:41:18.619 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:18.619 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP07_TT1 in Tag
+9/23/2018 3:41:18.619 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:18.619 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:18.619 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:18.619 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:18.619 AM -       FindReplace action #1 Started
+9/23/2018 3:41:18.619 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:18.619 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP07_PT1 in Tag
+9/23/2018 3:41:18.619 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:18.619 AM -       FindReplace action #2 Started
+9/23/2018 3:41:18.619 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:18.619 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP07_TT1 in Tag
+9/23/2018 3:41:18.619 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:18.619 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:18.619 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:18.619 AM - === Begin Applying Changes for instance 'Burge 26N-2HZ' ===
+9/23/2018 3:41:19.459 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:19.459 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:19.459 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:19.459 AM -       FindReplace action #1 Started
+9/23/2018 3:41:19.459 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:19.459 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP05_PT1 in Tag
+9/23/2018 3:41:19.460 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:19.460 AM -       FindReplace action #2 Started
+9/23/2018 3:41:19.460 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:19.460 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP05_TT1 in Tag
+9/23/2018 3:41:19.460 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:19.460 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:19.460 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:19.460 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:19.460 AM -       FindReplace action #1 Started
+9/23/2018 3:41:19.460 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:19.460 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP05_PT1 in Tag
+9/23/2018 3:41:19.460 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:19.460 AM -       FindReplace action #2 Started
+9/23/2018 3:41:19.460 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:19.460 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP05_TT1 in Tag
+9/23/2018 3:41:19.460 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:19.460 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:19.460 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:19.460 AM - === Begin Applying Changes for instance 'Burge 27C-2HZ' ===
+9/23/2018 3:41:22.598 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:22.598 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:22.598 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:22.598 AM -       FindReplace action #1 Started
+9/23/2018 3:41:22.598 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:22.598 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP09_PT1 in Tag
+9/23/2018 3:41:22.598 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:22.598 AM -       FindReplace action #2 Started
+9/23/2018 3:41:22.598 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:22.598 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP09_TT1 in Tag
+9/23/2018 3:41:22.598 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:22.598 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:22.598 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:22.598 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:22.598 AM -       FindReplace action #1 Started
+9/23/2018 3:41:22.598 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:22.599 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP09_PT1 in Tag
+9/23/2018 3:41:22.599 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:22.599 AM -       FindReplace action #2 Started
+9/23/2018 3:41:22.599 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:22.599 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP09_TT1 in Tag
+9/23/2018 3:41:22.599 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:22.599 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:22.599 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:22.599 AM - === Begin Applying Changes for instance 'Burge 27N-2HZ' ===
+9/23/2018 3:41:23.353 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:23.353 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:23.353 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:23.353 AM -       FindReplace action #1 Started
+9/23/2018 3:41:23.353 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:23.353 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP08_PT1 in Tag
+9/23/2018 3:41:23.353 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:23.353 AM -       FindReplace action #2 Started
+9/23/2018 3:41:23.353 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:23.353 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP08_TT1 in Tag
+9/23/2018 3:41:23.353 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:23.353 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:23.353 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:23.353 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:23.353 AM -       FindReplace action #1 Started
+9/23/2018 3:41:23.353 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:23.353 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP08_PT1 in Tag
+9/23/2018 3:41:23.353 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:23.353 AM -       FindReplace action #2 Started
+9/23/2018 3:41:23.353 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:23.353 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP08_TT1 in Tag
+9/23/2018 3:41:23.353 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:23.353 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:23.353 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:23.353 AM - === Begin Applying Changes for instance 'Burge 28N-2HZ' ===
+9/23/2018 3:41:24.080 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:24.080 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:24.081 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:24.081 AM -       FindReplace action #1 Started
+9/23/2018 3:41:24.081 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.081 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP12_PT1 in Tag
+9/23/2018 3:41:24.081 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:24.081 AM -       FindReplace action #2 Started
+9/23/2018 3:41:24.081 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.081 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP12_TT1 in Tag
+9/23/2018 3:41:24.081 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:24.081 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:24.081 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:24.081 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:24.081 AM -       FindReplace action #1 Started
+9/23/2018 3:41:24.081 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.081 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP12_PT1 in Tag
+9/23/2018 3:41:24.081 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:24.081 AM -       FindReplace action #2 Started
+9/23/2018 3:41:24.081 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.081 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP12_TT1 in Tag
+9/23/2018 3:41:24.081 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:24.081 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:24.081 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:24.081 AM - === Begin Applying Changes for instance 'Burge 2C-2HZ' ===
+9/23/2018 3:41:24.812 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:24.812 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:24.812 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:24.812 AM -       FindReplace action #1 Started
+9/23/2018 3:41:24.812 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.812 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP11_PT1 in Tag
+9/23/2018 3:41:24.812 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:24.812 AM -       FindReplace action #2 Started
+9/23/2018 3:41:24.812 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.812 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP11_TT1 in Tag
+9/23/2018 3:41:24.812 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:24.812 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:24.812 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:24.813 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:24.813 AM -       FindReplace action #1 Started
+9/23/2018 3:41:24.813 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.813 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP11_PT1 in Tag
+9/23/2018 3:41:24.813 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:24.813 AM -       FindReplace action #2 Started
+9/23/2018 3:41:24.813 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:24.813 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP11_TT1 in Tag
+9/23/2018 3:41:24.813 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:24.813 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:24.813 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:24.813 AM - === Begin Applying Changes for instance 'Burge 2N-2HZ' ===
+9/23/2018 3:41:25.526 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:25.526 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:25.526 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:25.526 AM -       FindReplace action #1 Started
+9/23/2018 3:41:25.526 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:25.526 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP10_PT1 in Tag
+9/23/2018 3:41:25.526 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:25.526 AM -       FindReplace action #2 Started
+9/23/2018 3:41:25.526 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:25.526 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP10_TT1 in Tag
+9/23/2018 3:41:25.526 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:25.526 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:25.526 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:25.526 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:25.526 AM -       FindReplace action #1 Started
+9/23/2018 3:41:25.526 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:25.526 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS06.BURGE_B_SEP10_PT1 in Tag
+9/23/2018 3:41:25.526 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:25.527 AM -       FindReplace action #2 Started
+9/23/2018 3:41:25.527 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:25.527 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS06.BURGE_B_SEP10_TT1 in Tag
+9/23/2018 3:41:25.527 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:25.527 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:25.527 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:25.527 AM - === Begin Applying Changes for instance 'Hergenreder 22N1-4HZ' ===
+9/23/2018 3:41:26.257 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:26.258 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:26.258 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:26.258 AM -       FindReplace action #1 Started
+9/23/2018 3:41:26.258 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.258 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP04_PT1 in Tag
+9/23/2018 3:41:26.258 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:26.258 AM -       FindReplace action #2 Started
+9/23/2018 3:41:26.258 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.258 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP04_TT1 in Tag
+9/23/2018 3:41:26.258 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:26.258 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:26.258 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:26.258 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:26.258 AM -       FindReplace action #1 Started
+9/23/2018 3:41:26.258 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.258 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP04_PT1 in Tag
+9/23/2018 3:41:26.258 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:26.258 AM -       FindReplace action #2 Started
+9/23/2018 3:41:26.258 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.258 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP04_TT1 in Tag
+9/23/2018 3:41:26.258 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:26.258 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:26.258 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:26.258 AM - === Begin Applying Changes for instance 'Hergenreder 22N2-4HZ' ===
+9/23/2018 3:41:26.965 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:26.965 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:26.965 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:26.965 AM -       FindReplace action #1 Started
+9/23/2018 3:41:26.966 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.966 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP03_PT1 in Tag
+9/23/2018 3:41:26.966 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:26.966 AM -       FindReplace action #2 Started
+9/23/2018 3:41:26.966 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.966 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP03_TT1 in Tag
+9/23/2018 3:41:26.966 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:26.966 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:26.966 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:26.966 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:26.966 AM -       FindReplace action #1 Started
+9/23/2018 3:41:26.966 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.966 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP03_PT1 in Tag
+9/23/2018 3:41:26.966 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:26.966 AM -       FindReplace action #2 Started
+9/23/2018 3:41:26.966 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:26.966 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP03_TT1 in Tag
+9/23/2018 3:41:26.966 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:26.966 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:26.966 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:26.966 AM - === Begin Applying Changes for instance 'Hergenreder 25N-4HZ' ===
+9/23/2018 3:41:27.687 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:27.687 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:27.687 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:27.687 AM -       FindReplace action #1 Started
+9/23/2018 3:41:27.687 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:27.687 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP06_PT1 in Tag
+9/23/2018 3:41:27.687 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:27.687 AM -       FindReplace action #2 Started
+9/23/2018 3:41:27.687 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:27.687 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP06_TT1 in Tag
+9/23/2018 3:41:27.687 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:27.687 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:27.687 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:27.687 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:27.687 AM -       FindReplace action #1 Started
+9/23/2018 3:41:27.687 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:27.687 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP06_PT1 in Tag
+9/23/2018 3:41:27.687 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:27.687 AM -       FindReplace action #2 Started
+9/23/2018 3:41:27.687 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:27.687 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP06_TT1 in Tag
+9/23/2018 3:41:27.687 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:27.687 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:27.687 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:27.687 AM - === Begin Applying Changes for instance 'Hergenreder 32N-4HZ' ===
+9/23/2018 3:41:28.388 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:28.388 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:28.388 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:28.388 AM -       FindReplace action #1 Started
+9/23/2018 3:41:28.388 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:28.388 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP01_PT1 in Tag
+9/23/2018 3:41:28.388 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:28.388 AM -       FindReplace action #2 Started
+9/23/2018 3:41:28.388 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:28.388 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP01_TT1 in Tag
+9/23/2018 3:41:28.388 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:28.388 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:28.388 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:28.388 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:28.388 AM -       FindReplace action #1 Started
+9/23/2018 3:41:28.388 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:28.388 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP01_PT1 in Tag
+9/23/2018 3:41:28.388 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:28.388 AM -       FindReplace action #2 Started
+9/23/2018 3:41:28.388 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:28.388 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP01_TT1 in Tag
+9/23/2018 3:41:28.388 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:28.388 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:28.388 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:28.389 AM - === Begin Applying Changes for instance 'Hergenreder 5N-4HZ' ===
+9/23/2018 3:41:29.099 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:29.099 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:29.099 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:29.099 AM -       FindReplace action #1 Started
+9/23/2018 3:41:29.099 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.099 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP02_PT1 in Tag
+9/23/2018 3:41:29.099 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:29.099 AM -       FindReplace action #2 Started
+9/23/2018 3:41:29.099 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.099 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP02_TT1 in Tag
+9/23/2018 3:41:29.099 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:29.099 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:29.099 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:29.100 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:29.100 AM -       FindReplace action #1 Started
+9/23/2018 3:41:29.100 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.100 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP02_PT1 in Tag
+9/23/2018 3:41:29.100 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:29.100 AM -       FindReplace action #2 Started
+9/23/2018 3:41:29.100 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.100 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP02_TT1 in Tag
+9/23/2018 3:41:29.100 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:29.100 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:29.100 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:29.100 AM - === Begin Applying Changes for instance 'Hergenreder 6N-4HZ' ===
+9/23/2018 3:41:29.796 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:29.796 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:29.796 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:29.796 AM -       FindReplace action #1 Started
+9/23/2018 3:41:29.796 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.796 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP05_PT1 in Tag
+9/23/2018 3:41:29.796 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:29.796 AM -       FindReplace action #2 Started
+9/23/2018 3:41:29.797 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.797 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP05_TT1 in Tag
+9/23/2018 3:41:29.797 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:29.797 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:29.797 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:29.797 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:29.797 AM -       FindReplace action #1 Started
+9/23/2018 3:41:29.797 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.797 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP05_PT1 in Tag
+9/23/2018 3:41:29.797 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:29.797 AM -       FindReplace action #2 Started
+9/23/2018 3:41:29.797 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:29.797 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP05_TT1 in Tag
+9/23/2018 3:41:29.797 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:29.797 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:29.797 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:29.797 AM - === Begin Applying Changes for instance 'Hergenreder 7N-4HZ' ===
+9/23/2018 3:41:30.497 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' started ***
+9/23/2018 3:41:30.497 AM -     ObjectTypeProperty 'LP Separator Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:30.497 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:30.497 AM -       FindReplace action #1 Started
+9/23/2018 3:41:30.497 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:30.497 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP07_PT1 in Tag
+9/23/2018 3:41:30.497 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:30.497 AM -       FindReplace action #2 Started
+9/23/2018 3:41:30.497 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:30.497 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP07_TT1 in Tag
+9/23/2018 3:41:30.497 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:30.497 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:30.497 AM -     ObjectTypeProperty 'LP Separator Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 3:41:30.497 AM -     Applying 2 FindReplace actions Started
+9/23/2018 3:41:30.497 AM -       FindReplace action #1 Started
+9/23/2018 3:41:30.497 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:30.497 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_PRESS2 with WTTNBERG.UIS08.HERGEN_A_SEP07_PT1 in Tag
+9/23/2018 3:41:30.497 AM -       FindReplace action #1 Complete
+9/23/2018 3:41:30.497 AM -       FindReplace action #2 Started
+9/23/2018 3:41:30.497 AM -         Applying 2 parameters to string fields
+9/23/2018 3:41:30.497 AM -           replacing WTTNBERG.UIS00:PREFIX_SEP_TEMP2 with WTTNBERG.UIS08.HERGEN_A_SEP07_TT1 in Tag
+9/23/2018 3:41:30.497 AM -       FindReplace action #2 Complete
+9/23/2018 3:41:30.497 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 3:41:30.497 AM -   *** action 'Substitute_Sep_Proficy_Tag_Prefixes' ended ***
+9/23/2018 3:41:30.517 AM - Saving Changes to the database
+9/23/2018 3:41:30.517 AM -   15 Object Instances
+9/23/2018 3:41:30.517 AM -   30 DataSets (30 New)
+9/23/2018 3:41:30.517 AM -   30 Tags
+9/23/2018 3:41:30.653 AM - Apply Properties complete

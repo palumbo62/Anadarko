@@ -1,0 +1,30 @@
+9/23/2018 6:50:34.104 AM - Apply Properties started
+9/23/2018 6:50:34.800 AM - === Begin Applying Changes for instance 'LEINWEBER 1,27-11HZ O SA ECD1' ===
+9/23/2018 6:50:35.508 AM -   *** action '' started ***
+9/23/2018 6:50:35.508 AM -     ObjectTypeProperty 'Status_String', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:35.508 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:35.508 AM -       FindReplace action #1 Started
+9/23/2018 6:50:35.508 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:35.509 AM -           replacing WTTNBERG.UIS00:PREFIX_ECD with WTTNBERG.UIS05.LEIN_A_ECD1 in Tag
+9/23/2018 6:50:35.509 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:35.509 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:35.509 AM -     ObjectTypeProperty 'Status_Indicator', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:35.509 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:35.509 AM -       FindReplace action #1 Started
+9/23/2018 6:50:35.509 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:35.509 AM -           replacing WTTNBERG.UIS00:PREFIX_ECD with WTTNBERG.UIS05.LEIN_A_ECD1 in Tag
+9/23/2018 6:50:35.509 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:35.509 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:35.509 AM -     ObjectTypeProperty 'Inlet Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:35.509 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:35.509 AM -       FindReplace action #1 Started
+9/23/2018 6:50:35.509 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:35.509 AM -           replacing WTTNBERG.UIS00:PREFIX_ECD with WTTNBERG.UIS05.LEIN_A_ECD1 in Tag
+9/23/2018 6:50:35.509 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:35.509 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:35.509 AM -   *** action '' ended ***
+9/23/2018 6:50:37.926 AM - Saving Changes to the database
+9/23/2018 6:50:37.926 AM -   1 Object Instances
+9/23/2018 6:50:37.926 AM -   3 DataSets (3 New)
+9/23/2018 6:50:37.926 AM -   3 Tags
+9/23/2018 6:50:38.409 AM - Apply Properties complete

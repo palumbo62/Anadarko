@@ -1,0 +1,96 @@
+9/23/2018 6:49:35.533 AM - Apply Properties started
+9/23/2018 6:49:36.212 AM - === Begin Applying Changes for instance 'HERGENREDER 4-33H(047341)' ===
+9/23/2018 6:49:36.879 AM -   *** action 'apply_props' started ***
+9/23/2018 6:49:36.879 AM -     ObjectTypeProperty 'Gas Sales Volume', DataSource 'External - PDB' did not exist and will be created 
+9/23/2018 6:49:36.880 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.880 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.880 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.880 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.880 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.880 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.880 AM -     ObjectTypeProperty 'Gas Sales Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:49:36.880 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.880 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.880 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.880 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.880 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.880 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.880 AM -     ObjectTypeProperty 'Gas Sales Pressure', DataSource 'External - PDB' did not exist and will be created 
+9/23/2018 6:49:36.880 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.880 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.880 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.880 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.880 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.881 AM -     ObjectTypeProperty 'Gas Sales Temperature', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.881 AM -     ObjectTypeProperty 'Gas Sales Temperature', DataSource 'External - PDB' did not exist and will be created 
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.881 AM -     ObjectTypeProperty 'Gas Sales Volume Yesterday', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.881 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.881 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.881 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.881 AM -     ObjectTypeProperty 'Lag Time - Gas Yesterday', DataSource 'Lag Time' did not exist and will be created 
+9/23/2018 6:49:36.881 AM -     Applying 2 FindReplace actions Started
+9/23/2018 6:49:36.882 AM -       FindReplace action #1 Started
+9/23/2018 6:49:36.882 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.882 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:49:36.882 AM -       FindReplace action #1 Complete
+9/23/2018 6:49:36.882 AM -       FindReplace action #2 Started
+9/23/2018 6:49:36.882 AM -         Applying 2 parameters to string fields
+9/23/2018 6:49:36.882 AM -           replacing BRIGHTON.UIS:PREFIX with BRIGHTON.UIS.A90G46_M1 in Tag
+9/23/2018 6:49:36.882 AM -       FindReplace action #2 Complete
+9/23/2018 6:49:36.882 AM -     Applying 2 FindReplace actions Complete
+9/23/2018 6:49:36.882 AM -   *** action 'apply_props' ended ***
+9/23/2018 6:49:36.882 AM - === Begin Applying Changes for instance 'SACK28C29C-30H G(010934)' ===
+9/23/2018 6:49:37.559 AM -   *** action 'apply_props' started ***
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Volume', DataSource 'External - PDB' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Pressure', DataSource 'Real Time' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Pressure', DataSource 'External - PDB' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Temperature', DataSource 'Real Time' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Temperature', DataSource 'External - PDB' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Gas Sales Volume Yesterday', DataSource 'Real Time' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -     ObjectTypeProperty 'Lag Time - Gas Yesterday', DataSource 'Lag Time' already exists and will be skipped 
+9/23/2018 6:49:37.559 AM -   *** action 'apply_props' ended ***
+9/23/2018 6:49:37.613 AM - Saving Changes to the database
+9/23/2018 6:49:37.613 AM -   2 Object Instances
+9/23/2018 6:49:37.613 AM -   7 DataSets (7 New)
+9/23/2018 6:49:37.613 AM -   7 Tags
+9/23/2018 6:49:37.675 AM - Apply Properties complete

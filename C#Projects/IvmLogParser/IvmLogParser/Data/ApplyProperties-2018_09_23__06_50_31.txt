@@ -1,0 +1,51 @@
+9/23/2018 6:50:29.566 AM - Apply Properties started
+9/23/2018 6:50:30.259 AM - === Begin Applying Changes for instance 'LEINWEBER 1,27-11HZ O SA' ===
+9/23/2018 6:50:30.964 AM -   *** action '' started ***
+9/23/2018 6:50:30.964 AM -     ObjectTypeProperty 'Oil Volume Yesterday', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.964 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.964 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.964 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.964 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.964 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.964 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.964 AM -     ObjectTypeProperty 'Gas Volume Yesterday', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.964 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.964 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.964 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.964 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.964 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.964 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.964 AM -     ObjectTypeProperty 'Water Volume Yesterday', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.965 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.965 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.965 AM -     ObjectTypeProperty 'O2 Sensor Reading', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.965 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.965 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.965 AM -     ObjectTypeProperty 'Shutdown_Reason', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.965 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.965 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.965 AM -     ObjectTypeProperty 'True Line Pressure', DataSource 'Real Time' did not exist and will be created 
+9/23/2018 6:50:30.965 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:50:30.965 AM -       FindReplace action #1 Started
+9/23/2018 6:50:30.965 AM -         Applying 1 parameters to string fields
+9/23/2018 6:50:30.966 AM -           replacing WTTNBERG.UIS00:PREFIX with WTTNBERG.UIS05.LEIN_A_BATT1 in Tag
+9/23/2018 6:50:30.966 AM -       FindReplace action #1 Complete
+9/23/2018 6:50:30.966 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:50:30.966 AM -   *** action '' ended ***
+9/23/2018 6:50:30.976 AM - Saving Changes to the database
+9/23/2018 6:50:30.976 AM -   1 Object Instances
+9/23/2018 6:50:30.976 AM -   6 DataSets (6 New)
+9/23/2018 6:50:30.976 AM -   6 Tags
+9/23/2018 6:50:31.036 AM - Apply Properties complete

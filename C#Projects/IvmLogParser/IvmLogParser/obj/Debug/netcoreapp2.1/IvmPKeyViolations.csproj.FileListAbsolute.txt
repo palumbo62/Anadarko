@@ -1,0 +1,13 @@
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\Data\DataManager-2018-09-17.log
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\Data\DataManager-2018-09-22.log
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\Data\DataManager-2018-10-11.log
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\IvmPKeyViolations.deps.json
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\IvmPKeyViolations.runtimeconfig.json
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\IvmPKeyViolations.runtimeconfig.dev.json
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\IvmPKeyViolations.dll
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\bin\Debug\netcoreapp2.1\IvmPKeyViolations.pdb
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\obj\Debug\netcoreapp2.1\IvmPKeyViolations.csproj.CoreCompileInputs.cache
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\obj\Debug\netcoreapp2.1\IvmPKeyViolations.AssemblyInfoInputs.cache
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\obj\Debug\netcoreapp2.1\IvmPKeyViolations.AssemblyInfo.cs
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\obj\Debug\netcoreapp2.1\IvmPKeyViolations.dll
+C:\Users\gbx393\AnadarkoDev\IVM\C#\IvmLogParser\IvmLogParser\obj\Debug\netcoreapp2.1\IvmPKeyViolations.pdb

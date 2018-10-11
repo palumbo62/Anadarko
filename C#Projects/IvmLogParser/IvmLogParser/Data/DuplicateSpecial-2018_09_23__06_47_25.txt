@@ -1,0 +1,111 @@
+9/23/2018 6:47:24.573 AM - Duplicate Special started
+9/23/2018 6:47:24.573 AM - Creating 2 Object Instances
+9/23/2018 6:47:25.334 AM - === Begin Applying Changes for instance 'HERGENREDER 4-33H(047341)' ===
+9/23/2018 6:47:25.339 AM -   *** action 'duplicate_special' started ***
+9/23/2018 6:47:25.339 AM -     ObjectTypeProperty 'Gathering System ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.339 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.339 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.339 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.339 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.339 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.339 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.339 AM -     ObjectTypeProperty 'Meter ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.339 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.339 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.339 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.339 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.339 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.339 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.339 AM -     ObjectTypeProperty 'Meter Number', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.340 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.340 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.340 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.340 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.340 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.340 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.340 AM -     ObjectTypeProperty 'Delivered To', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.340 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.340 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.340 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.340 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.340 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.340 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.340 AM -     ObjectTypeProperty 'Pseudo Meter', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.340 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.340 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.340 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.341 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.341 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.341 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.341 AM -     ObjectTypeProperty 'Commingle ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.341 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.341 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.341 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.341 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.341 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.341 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.341 AM -     ObjectTypeProperty 'Commingle Name', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.341 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.341 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.341 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.341 AM -           replacing A00000000 with 36920776 in Tag
+9/23/2018 6:47:25.341 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.341 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.341 AM -   *** action 'duplicate_special' ended ***
+9/23/2018 6:47:25.341 AM - === Begin Applying Changes for instance 'SARCHET 15N-32HZ G(007710)' ===
+9/23/2018 6:47:25.346 AM -   *** action 'duplicate_special' started ***
+9/23/2018 6:47:25.346 AM -     ObjectTypeProperty 'Gathering System ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.346 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.346 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.346 AM -     ObjectTypeProperty 'Meter ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.346 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.346 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.346 AM -     ObjectTypeProperty 'Meter Number', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.346 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.346 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.346 AM -     ObjectTypeProperty 'Delivered To', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.346 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.346 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.346 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.346 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.347 AM -     ObjectTypeProperty 'Pseudo Meter', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.347 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.347 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.347 AM -     ObjectTypeProperty 'Commingle ID', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.347 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.347 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.347 AM -     ObjectTypeProperty 'Commingle Name', DataSource 'Sales Meter Properties' did not exist and will be created 
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Started
+9/23/2018 6:47:25.347 AM -         Applying 1 parameters to string fields
+9/23/2018 6:47:25.347 AM -           replacing A00000000 with 34025419 in Tag
+9/23/2018 6:47:25.347 AM -       FindReplace action #1 Complete
+9/23/2018 6:47:25.347 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:47:25.347 AM -   *** action 'duplicate_special' ended ***
+9/23/2018 6:47:25.376 AM - Saving Changes to the database
+9/23/2018 6:47:25.376 AM -   2 Object Instances
+9/23/2018 6:47:25.376 AM -   14 DataSets (14 New)
+9/23/2018 6:47:25.376 AM -   14 Tags
+9/23/2018 6:47:25.462 AM - Duplicate Special complete

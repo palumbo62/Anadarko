@@ -1,0 +1,195 @@
+9/23/2018 6:46:36.848 AM - Duplicate Special started
+9/23/2018 6:46:36.848 AM - Creating 2 Object Instances
+9/23/2018 6:46:37.627 AM - === Begin Applying Changes for instance 'LEINWEBER 1,27-11HZ O SA' ===
+9/23/2018 6:46:37.632 AM -   *** action '' started ***
+9/23/2018 6:46:37.632 AM -     ObjectTypeProperty 'Commingle ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.632 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.632 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.632 AM -     ObjectTypeProperty 'PDB Y-Well', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.632 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.632 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.632 AM -     ObjectTypeProperty 'Proficy O2 Tag Prefix', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.632 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.632 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.632 AM -     ObjectTypeProperty 'Commingle Description', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.632 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.632 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.632 AM -     ObjectTypeProperty 'Proficy Battery Tag Prefix', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.632 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.632 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.632 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.632 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Production Area Name', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Foreman Area ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Operator Route ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Engineer ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Engineer Name', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'Dynamic Sorter', DataSource 'Dynamic Graphic' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'HF Production Tracker - Delta Above - BOE', DataSource 'Production Surveillance' did not exist and will be created 
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.633 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.633 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.633 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.633 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.633 AM -     ObjectTypeProperty 'HF Production Tracker - Delta Below - BOE', DataSource 'Production Surveillance' did not exist and will be created 
+9/23/2018 6:46:37.634 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.634 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.634 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.634 AM -           replacing A00000000 with 36926641 in Tag
+9/23/2018 6:46:37.634 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.634 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.634 AM -   *** action '' ended ***
+9/23/2018 6:46:37.634 AM - === Begin Applying Changes for instance 'QUARTER CIRCLE 13 & 14-24HZ  O SA' ===
+9/23/2018 6:46:37.638 AM -   *** action '' started ***
+9/23/2018 6:46:37.638 AM -     ObjectTypeProperty 'Commingle ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.638 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.638 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.638 AM -     ObjectTypeProperty 'PDB Y-Well', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.638 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.638 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.638 AM -     ObjectTypeProperty 'Proficy O2 Tag Prefix', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.638 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.638 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.638 AM -     ObjectTypeProperty 'Commingle Description', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.638 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.638 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.638 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.638 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Proficy Battery Tag Prefix', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Production Area Name', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Foreman Area ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Operator Route ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Engineer ID', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Engineer Name', DataSource 'Battery Properties' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'Dynamic Sorter', DataSource 'Dynamic Graphic' did not exist and will be created 
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.639 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.639 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.639 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.639 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.639 AM -     ObjectTypeProperty 'HF Production Tracker - Delta Above - BOE', DataSource 'Production Surveillance' did not exist and will be created 
+9/23/2018 6:46:37.640 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.640 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.640 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.640 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.640 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.640 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.640 AM -     ObjectTypeProperty 'HF Production Tracker - Delta Below - BOE', DataSource 'Production Surveillance' did not exist and will be created 
+9/23/2018 6:46:37.640 AM -     Applying 1 FindReplace actions Started
+9/23/2018 6:46:37.640 AM -       FindReplace action #1 Started
+9/23/2018 6:46:37.640 AM -         Applying 1 parameters to string fields
+9/23/2018 6:46:37.640 AM -           replacing A00000000 with 36926680 in Tag
+9/23/2018 6:46:37.640 AM -       FindReplace action #1 Complete
+9/23/2018 6:46:37.640 AM -     Applying 1 FindReplace actions Complete
+9/23/2018 6:46:37.640 AM -   *** action '' ended ***
+9/23/2018 6:46:37.661 AM - Saving Changes to the database
+9/23/2018 6:46:37.661 AM -   2 Object Instances
+9/23/2018 6:46:37.661 AM -   26 DataSets (26 New)
+9/23/2018 6:46:37.661 AM -   26 Tags
+9/23/2018 6:46:37.788 AM - Duplicate Special complete
