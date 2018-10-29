@@ -4,7 +4,7 @@ DECLARE @StdDevFactor AS INT = 2
 DECLARE @StdDevLabel AS VARCHAR(16)
 
 SET @StdDevLabel = 'StdDevX' + CAST(@StdDevFactor AS char)
-SELECT  @DayOffset, @RunHistoryStartOffset, @StdDevFactor, @StdDevLabel;
+SELECT  @DayOffset AS DaysInPast, @RunHistoryStartOffset AS StartDateOffset, @StdDevFactor As StdDevFactor, @StdDevLabel As StdDevLabel;
 
 WITH cte1 AS (
     SELECT 
