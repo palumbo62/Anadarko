@@ -1,22 +1,40 @@
-SELECT
-    vw_CurrentValues.ObjectInstanceName AS WellName, 
-    vw_CurrentValues.ObjectTypePropertyName AS PropertyName, 
-    CONVERT(VARCHAR(10), vw_HistoryNumeric.TimeOfSample, 101) AS SampleDate,
-	MAX(vw_HistoryNumeric.Value) AS HistoryValue
-    
-FROM 
-    IVMPetexDP.ext.vw_CurrentValues vw_CurrentValues
-    INNER JOIN IVMPetexDP.ext.vw_HistoryNumeric vw_HistoryNumeric
-        ON (vw_CurrentValues.DataSetId = vw_HistoryNumeric.DataSetId)
+
+WITH cte1 AS 
+(
+	SELECT
+		cv.ObjectInstanceName AS WellName, 
+--		cv.ObjectTypePropertyName AS PropertyName, 
+		cv.CurrentValue AS ForemanID,
+--		cv2.ObjectTypePropertyName AS PropertyName2,
+		CONVERT(VARCHAR(10), cvh.TimeOfSample, 101) AS SampleDate,
+		cvh.Value AS HistoryValue
+	FROM 
+		IVMPetexDP.ext.vw_CurrentValues cv
+		INNER JOIN IVMPetexDP.ext.vw_CurrentValues cv2 
+			ON cv.ObjectInstanceId = cv2.ObjectInstanceId
+		INNER JOIN IVMPetexDP.ext.vw_HistoryNumeric cvh
+			ON (cv2.DataSetId = cvh.DataSetId)
+	WHERE
+		(cv.ObjectTypeId = 1000000)
+		AND ((cv.DataSourceName IN ('Well Properties') 
+			AND cv.ObjectTypePropertyName = 'Foreman Area ID'))
+		AND ((cv2.DataSourceName IN ('Production Surveillance')
+			AND cv2.ObjectTypePropertyName = 'Exception Tracker - Gas Sales Pressure Indicator - Daily'))
+		AND (cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-13') 
+		AND (cvh.Value = 1)
+)
+SELECT 
+    cte1.WellName,
+	cte1.ForemanID,
+	cv.CurrentValue as ForemanName,
+	cte1.SampleDate,
+	cte1.HistoryValue
+FROM
+	cte1 
+	INNER JOIN  IVMPetexDP.ext.vw_CurrentValues cv
+		ON cv.ObjectInstanceName = cte1.ForemanID
 WHERE
-    (vw_CurrentValues.ObjectTypeId = 1000000)
-    AND (vw_CurrentValues.DataSourceName = 'Production Surveillance')
-	AND (vw_CurrentValues.ObjectTypePropertyName IN ('Exception Tracker - Gas Sales Pressure Indicator - Daily'))
-    AND (vw_HistoryNumeric.Value = 1)
-	AND (vw_HistoryNumeric.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-13') 
-GROUP BY 
-    vw_HistoryNumeric.TimeOfSample, 
-    vw_CurrentValues.ObjectInstanceName,
-    vw_CurrentValues.ObjectTypePropertyName
+	(cv.DataSourceName = 'Well Properties' 
+	AND cv.ObjectTypePropertyName = 'Foreman Name')
 ORDER BY
-	vw_HistoryNumeric.TimeOfSample DESC;
+	cte1.SampleDate DESC
