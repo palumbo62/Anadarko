@@ -1,10 +1,10 @@
 /*
 *********************************************************************************
 *  Source Name:  
-*        ExceptionTracker-GSPI-HistPvt.sql
+*        ExceptionTracker-LPI-HistPvt.sql
 *  
 *  Purpose:      
-*        SQL Query used to retrieve and format data for the Exception Tracker -
+*        SQL Query used to retrieve an format data for the Exception Tracker -
 *        Gas Sales Pressure report using historical data values.
 *        
 *  Author:
@@ -57,7 +57,7 @@ WITH cte1 AS (
 				)
 				AND cv.ObjectTypePropertyName IN
 				(
-					'Exception Tracker - Gas Sales Pressure Indicator - Daily'
+					'Exception Tracker - Line Pressure Indicator - Daily'
 					,'WINS'
 					,'Foreman Area ID'
 					,'Foreman Name'
@@ -81,7 +81,7 @@ SELECT
 	[WINS],
 	[Foreman Area ID],
 	[Foreman Name],
-	CAST([Exception Tracker - Gas Sales Pressure Indicator - Daily] AS FLOAT) AS GSPIndicator,
+	CAST([Exception Tracker - Line Pressure Indicator - Daily] AS FLOAT) AS LPIndicator,
 	CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHigh,
 	CAST([HF Production Tracker - Oil Delta - Daily] AS FLOAT) AS OilDeltaDaily,
 	[SampleDate]
@@ -103,11 +103,11 @@ PIVOT (
 			[WINS],
 			[Foreman Area ID],
 			[Foreman Name],
-	 		[Exception Tracker - Gas Sales Pressure Indicator - Daily]
+	 		[Exception Tracker - Line Pressure Indicator - Daily]
         )
 ) AS pvt2
 
 WHERE 
-	[Exception Tracker - Gas Sales Pressure Indicator - Daily] = 1
+	[Exception Tracker - Line Pressure Indicator - Daily] = 1
 ORDER BY
 	[SampleDate] DESC
