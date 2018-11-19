@@ -1,10 +1,10 @@
 /*
 *********************************************************************************
 *  Source Name:  
-*        ExceptionTracker-GSDI-HistPvt.sql
+*        ExceptionTracker-GSPI-HistPvt.sql
 *  
 *  Purpose:      
-*        SQL Query used to retrieve an format data for the Exception Tracker -
+*        SQL Query used to retrieve and format data for the Exception Tracker -
 *        Gas Sales Pressure report using historical data values.
 *        
 *  Author:
@@ -38,7 +38,7 @@ WITH cte1 AS (
 					'HF Production Tracker - Oil Target Highest'
 					,'HF Production Tracker - Oil Delta - Daily'
 				)
-		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-13'
+		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
 )
 , cte2 AS (
 	SELECT cv.ObjectInstanceName,
@@ -82,9 +82,9 @@ SELECT
 	(select top 1 xv.CurrentValue from cte3
 			inner join IVMPetexDP.ext.vw_CurrentValues xv
 			on [Foreman Area ID] = xv.ObjectInstanceName) AS ForemanName,
-	[Exception Tracker - Gas Sales Pressure Indicator - Daily] AS GSPIndicator,
-	[HF Production Tracker - Oil Target Highest] AS OilTargetHigh,
-	[HF Production Tracker - Oil Delta - Daily] AS OilDeltaDaily,
+	CAST([Exception Tracker - Gas Sales Pressure Indicator - Daily] AS FLOAT) AS GSPIndicator,
+	CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHigh,
+	CAST([HF Production Tracker - Oil Delta - Daily] AS FLOAT) AS OilDeltaDaily,
 	[SampleDate]
 FROM (SELECT * FROM cte3) AS cv
 PIVOT (
