@@ -35,7 +35,8 @@ WITH cte1 AS (
 		  AND cv.DataSourceName IN ('Production Surveillance')
 		  AND cv.ObjectTypePropertyName IN
 				(
-					'HF Production Tracker - Oil Target Highest'
+					'Exception Tracker - Line Pressure Indicator - Daily'
+					,'HF Production Tracker - Oil Target Highest'
 					,'HF Production Tracker - Oil Delta - Daily'
 				)
 		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
@@ -52,13 +53,12 @@ WITH cte1 AS (
 	WHERE	(cv.ObjectTypeId = 1000000
 				AND cv.DataSourceName IN 
 				(
-					'Well Properties',
-					'Production Surveillance'
+					'Well Properties'
+					--,'Production Surveillance'
 				)
 				AND cv.ObjectTypePropertyName IN
 				(
-					'Exception Tracker - Line Pressure Indicator - Daily'
-					,'WINS'
+					'WINS'
 					,'Foreman Area ID'
 					,'Foreman Name'
 				))
@@ -77,22 +77,23 @@ WITH cte1 AS (
 			ON c1.ObjectInstanceName = c2.ObjectInstanceName 
 )
 SELECT 
-	[ObjectInstanceName] AS WellName,
-	[WINS],
-	[Foreman Area ID],
-	[Foreman Name],
-	CAST([Exception Tracker - Line Pressure Indicator - Daily] AS FLOAT) AS LPIndicator,
-	CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHigh,
-	CAST([HF Production Tracker - Oil Delta - Daily] AS FLOAT) AS OilDeltaDaily,
-	[SampleDate]
+	[ObjectInstanceName] AS WellName
+	,[WINS]
+	,[Foreman Area ID]
+	,[Foreman Name]
+	,CAST([Exception Tracker - Line Pressure Indicator - Daily] AS FLOAT) AS LPIndicator
+	,CAST([HF Production Tracker - Oil Target Highest] AS FLOAT) AS OilTargetHigh
+	,CAST([HF Production Tracker - Oil Delta - Daily] AS FLOAT) AS OilDeltaDaily
+	,[SampleDate]
 FROM (SELECT * FROM cte3) AS cv
 PIVOT (
     MAX(cv.HistValue)
 	
     FOR cv.ObjectTypePropertyName IN 
         (
-			[HF Production Tracker - Oil Target Highest],
-			[HF Production Tracker - Oil Delta - Daily]
+			[HF Production Tracker - Oil Target Highest]
+			,[HF Production Tracker - Oil Delta - Daily]
+	 		,[Exception Tracker - Line Pressure Indicator - Daily]
         )
 ) AS pvt1
 PIVOT (
@@ -103,7 +104,6 @@ PIVOT (
 			[WINS],
 			[Foreman Area ID],
 			[Foreman Name],
-	 		[Exception Tracker - Line Pressure Indicator - Daily]
         )
 ) AS pvt2
 

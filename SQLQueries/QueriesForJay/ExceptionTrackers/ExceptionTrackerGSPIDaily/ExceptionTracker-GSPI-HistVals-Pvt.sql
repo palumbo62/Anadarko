@@ -19,31 +19,35 @@
 */
 
 WITH cte1 AS (
-	SELECT cv.ObjectInstanceName,
-		   cv.ObjectTypePropertyName,
-		   CASE IsString
+	SELECT cv.ObjectInstanceName
+		   ,cv.ObjectTypePropertyName
+		   ,CASE IsString
 			  WHEN 0 THEN coalesce (cvh.Value, '0')
 			  ELSE coalesce (cvh.Value, '')
 		   END
-			  AS HistValue,
-		   CONVERT (VARCHAR (10), cvh.TimeOfSample, 101)
+			  AS HistValue
+		   ,CONVERT (VARCHAR (10), cvh.TimeOfSample, 101)
 			  AS SampleDate
 	FROM IVMPetexDP.ext.vw_CurrentValues cv
 		 INNER JOIN IVMPetexDP.ext.vw_HistoryNumeric cvh
 			ON (cv.DataSetId = cvh.DataSetId)
 	WHERE     cv.ObjectTypeId = 1000000
 		  AND cv.DataSourceName IN ('Production Surveillance')
-		  AND cv.ObjectTypePropertyName IN
+		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
+		  AND (cv.ObjectTypePropertyName IN
 				(
 					'HF Production Tracker - Oil Target Highest'
 					,'HF Production Tracker - Oil Delta - Daily'
 				)
-		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
+				OR  cv.ObjectTypePropertyName IN
+						('Exception Tracker - Gas Sales Pressure Indicator - Daily')
+					AND cvh.Value = 1)
+	--ORDER BY cv.ObjectTypePropertyName
 )
 , cte2 AS (
-	SELECT cv.ObjectInstanceName,
-		   cv.ObjectTypePropertyName,
-		   CASE IsString
+	SELECT cv.ObjectInstanceName
+		   ,cv.ObjectTypePropertyName
+		   ,CASE IsString
 			  WHEN 0 THEN coalesce (cv.CurrentValue, '0')
 			  ELSE coalesce (cv.CurrentValue, '')
 		   END
@@ -52,32 +56,34 @@ WITH cte1 AS (
 	WHERE	(cv.ObjectTypeId = 1000000
 				AND cv.DataSourceName IN 
 				(
-					'Well Properties',
-					'Production Surveillance'
+					'Well Properties'
 				)
 				AND cv.ObjectTypePropertyName IN
 				(
-					'Exception Tracker - Gas Sales Pressure Indicator - Daily'
-					,'WINS'
+					'WINS'
 					,'Foreman Area ID'
 					,'Foreman Name'
 				))
 )
 , cte3 AS (
 	SELECT 
-		c1.ObjectInstanceName,
-		c1.ObjectTypePropertyName, 
-		c1.HistValue,
-		c1.SampleDate,
-		c2.ObjectTypePropertyName AS c2ObjPropName,
-		c2.CurrentValue
+		c1.ObjectInstanceName AS WellName
+		,c1.ObjectTypePropertyName AS PropertyName
+		,c1.HistValue
+		,c1.SampleDate
+		,c2.ObjectTypePropertyName AS c2ObjPropName
+		,c2.CurrentValue
 
 	FROM cte1 c1	
 		JOIN cte2 c2
 			ON c1.ObjectInstanceName = c2.ObjectInstanceName 
 )
+
+--select * from cte3
+--order by cte3.ObjectTypePropertyName
+
 SELECT 
-	[ObjectInstanceName] AS WellName,
+	WellName,
 	[WINS],
 	[Foreman Area ID],
 	[Foreman Name],
@@ -89,10 +95,11 @@ FROM (SELECT * FROM cte3) AS cv
 PIVOT (
     MAX(cv.HistValue)
 	
-    FOR cv.ObjectTypePropertyName IN 
+    FOR cv.PropertyName IN 
         (
-			[HF Production Tracker - Oil Target Highest],
-			[HF Production Tracker - Oil Delta - Daily]
+	 		[Exception Tracker - Gas Sales Pressure Indicator - Daily]
+			,[HF Production Tracker - Oil Target Highest]
+			,[HF Production Tracker - Oil Delta - Daily]
         )
 ) AS pvt1
 PIVOT (
@@ -100,10 +107,9 @@ PIVOT (
 	
     FOR c2ObjPropName IN 
         (
-			[WINS],
-			[Foreman Area ID],
-			[Foreman Name],
-	 		[Exception Tracker - Gas Sales Pressure Indicator - Daily]
+			[WINS]
+			,[Foreman Area ID]
+			,[Foreman Name]
         )
 ) AS pvt2
 

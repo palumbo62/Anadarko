@@ -33,11 +33,17 @@ WITH cte1 AS (
 			ON (cv.DataSetId = cvh.DataSetId)
 	WHERE     cv.ObjectTypeId = 1000000
 		  AND cv.DataSourceName IN ('Production Surveillance')
-		  AND cv.ObjectTypePropertyName IN
-				(
-					'HF Production Tracker - Oil Target Highest'
-					,'HF Production Tracker - Oil Delta - Daily'
-				)
+				AND ((cv.ObjectTypePropertyName IN
+					(
+						'Exception Tracker - Gas Sales Pressure Indicator - Daily'
+					)
+					AND 
+					cv.CurrentValue = 1))
+				OR (cv.ObjectTypePropertyName IN 
+					(
+						'HF Production Tracker - Oil Target Highest'
+						,'HF Production Tracker - Oil Delta - Daily'
+					))
 		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
 )
 , cte2 AS (
