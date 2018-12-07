@@ -63,9 +63,12 @@ WITH cte1 AS (
 					,'Foreman Name'
 				))
 )
+
+select * from cte2
+
 , cte3 AS (
 	SELECT 
-		c1.ObjectInstanceName,
+		c1.ObjectInstanceName AS ObjectInstanceName,
 		c1.ObjectTypePropertyName, 
 		c1.HistValue,
 		c1.SampleDate,
@@ -76,6 +79,8 @@ WITH cte1 AS (
 		JOIN cte2 c2
 			ON c1.ObjectInstanceName = c2.ObjectInstanceName 
 )
+
+select * from cte3
 SELECT 
 	[ObjectInstanceName] AS WellName
 	,[WINS]
@@ -89,12 +94,16 @@ FROM (SELECT * FROM cte3) AS cv
 PIVOT (
     MAX(cv.HistValue)
 	
-    FOR cv.ObjectTypePropertyName IN 
+    FOR [ObjectTypePropertyName] IN 
         (
 			[HF Production Tracker - Oil Target Highest]
 			,[HF Production Tracker - Oil Delta - Daily]
 	 		,[Exception Tracker - Line Pressure Indicator - Daily]
-        )
+			,[SampleDate]
+ 			,[WINS]
+			,[Foreman Area ID]
+			,[Foreman Name]
+       )
 ) AS pvt1
 PIVOT (
     MAX(CurrentValue)

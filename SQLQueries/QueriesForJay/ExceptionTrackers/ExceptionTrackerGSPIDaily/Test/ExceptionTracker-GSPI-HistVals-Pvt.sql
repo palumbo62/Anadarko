@@ -38,12 +38,12 @@ WITH cte1 AS (
 						'Exception Tracker - Gas Sales Pressure Indicator - Daily'
 					)
 					AND 
-					cv.CurrentValue = 1))
-				OR (cv.ObjectTypePropertyName IN 
-					(
-						'HF Production Tracker - Oil Target Highest'
-						,'HF Production Tracker - Oil Delta - Daily'
-					))
+						chv.Value = 1))
+				--OR (cv.ObjectTypePropertyName IN 
+				--	(
+				--		'HF Production Tracker - Oil Target Highest'
+				--		,'HF Production Tracker - Oil Delta - Daily'
+				--	))
 		  AND cvh.TimeOfSample BETWEEN '2018-10-19' AND '2018-11-19'
 )
 , cte2 AS (
